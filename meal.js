@@ -33,7 +33,7 @@ app.use(session({
     resave: false,             // Don't save session if unmodified
     saveUninitialized: false,  // Don't create a session until something is stored
     store: MongoStore.create({
-        mongoUrl: 'mongodb://localhost:27017/Meal_matka',
+        mongoUrl: 'mongodb+srv://meal_matka_owner:2005@cluster0.6hhoa.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0',
         ttl: 14 * 24 * 60 * 60, // Session expiration time in seconds (default: 14 days)
     })
 }));   
