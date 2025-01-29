@@ -218,8 +218,8 @@
                 <br>
                 <p><strong style="color: white !important;">Rating:</strong> <%= review.rating %></p>
                 <p><%= review.comment %></p>
-                <p class="date" class="review-date">Posted on: <%= review.createdAt.toLocaleDateString() %></p>
-    
+                <p class="review-date">Posted on: <%= review.createdAt.toLocaleDateString() %></p>
+                <br><br><br>
                 <% if (current_user && review.user && current_user._id.toString() === review.user._id.toString()) { %>
                     <form action="/del_review/<%= review._id %>?method_=delete" method="post">
                         <button type="submit" class="btn btn-outline-primary redel" style="border: 2px solid orangered; color: orangered;">Delete</button>
