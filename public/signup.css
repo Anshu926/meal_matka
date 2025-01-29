@@ -1,0 +1,79 @@
+/* Dark Theme Styling */
+body {
+    background-color: #121212 !important;
+    color: #e1e1e1 !important;
+    font-family: Arial, sans-serif !important;
+    padding-bottom: 3rem !important;
+}
+
+nav.navbar {
+    background-color: #1f1f1f !important;
+}
+
+nav.navbar .navbar-brand, nav.navbar .nav-link {
+    color: #e1e1e1 !important;
+}
+
+nav.navbar .navbar-toggler-icon {
+    background-color: #e1e1e1 !important;
+}
+
+/* Form Styling */
+.container {
+    background-color: #2d2d2d !important;
+    padding: 40px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    margin-top: 80px !important;
+    max-width: 800px !important;
+}
+
+.form-label {
+    color: #e1e1e1 !important;
+}
+
+.form-control {
+    background-color: #333333 !important;
+    color: #e1e1e1 !important;
+    border: 1px solid #444444 !important;
+}
+
+.form-control:focus {
+    border-color: #e67e22 !important;
+    box-shadow: 0 0 5px rgba(230, 126, 34, 0.5) !important;
+}
+
+.invalid-feedback {
+    color: #fb0505 !important;
+}
+
+.btn-warning {
+    background-color: #e67e22 !important; /* Orangish Red */
+    border-color: #e67e22 !important;
+    width: 100% !important;
+}
+
+.btn-warning:hover {
+    background-color: #d35400 !important;
+    border-color: #d35400 !important;
+}
+
+.text-center h2 {
+    color: #e1e1e1 !important;
+}
+
+.form-control::placeholder {
+    color: white !important; /* Set placeholder color to white */
+}
+
+/* Optional fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0 !important;
+        transform: translateX(-50%) scale(0.8) !important;
+    }
+    to {
+        opacity: 1 !important;
+        transform: translateX(-50%) scale(1) !important;
+    }
+}

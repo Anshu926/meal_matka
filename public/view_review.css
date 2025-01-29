@@ -1,0 +1,142 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Page Title */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color: #444;
+    text-transform: uppercase;
+}
+
+/* Reviews Container */
+.reviews-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Review Card */
+.review-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    text-align: left !important;
+}
+
+/* Hover effect on Review Card */
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Reviewer Name */
+.review-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+/* Review Rating */
+.review-card p {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+/* Review Date */
+.review-date {
+    font-size: 0.9rem;
+    color: #999;
+    font-style: italic;
+    text-align: right;
+}
+
+/* Placeholder Message */
+.reviews-container p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #777;
+    padding: 10px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .reviews-container {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .review-card {
+        padding: 15px;
+    }
+
+    .review-card h3 {
+        font-size: 1rem;
+    }
+
+    .review-card p {
+        font-size: 0.9rem;
+    }
+}
+/* Navbar */
+.navbar {
+    background-color: #000000 !important; /* Black background for navbar */
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 1050 !important;
+}
+
+.navbar .navbar-brand {
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    color: #e0e0e0 !important;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #e0e0e0 !important;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: orange !important;
+}
+/* Navbar */
+.navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+    background-color: #343a40 !important;
+} 
+
+.container-fluid {
+    background-color: black !important;
+    padding: 1rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: orange !important;
+}

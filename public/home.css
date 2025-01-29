@@ -1,0 +1,438 @@
+body {
+    font-family: Arial, sans-serif !important;
+    background-color: black !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    padding-top: 150px !important;
+}
+
+.navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+    background-color: #343a40 !important;
+}
+
+.container {
+    width: 100vw !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 2rem !important;
+    background-color: transparent !important;
+    padding-bottom: 5rem !important;
+}
+
+.card {
+    width: 80vw !important;
+    margin: 10px auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    padding: 15px !important;
+    background-color: transparent !important;
+    text-decoration: none !important;
+    color: white !important;
+    overflow: hidden !important;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.5s ease-in-out !important;
+}
+
+.card:hover {
+    transform: scale(1.05) !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+}
+
+.card:hover .card-img-top {
+    filter: grayscale(0%) !important;
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out !important;
+}
+
+.card:hover .card-title,
+.card:hover .card-text {
+    color: orange !important;
+    text-shadow: 0px 0px 8px rgba(255, 165, 0, 0.8) !important; /* Glow effect */
+    transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out !important;
+}
+
+.card:hover .card-title {
+    font-size: 2rem !important; /* Slight size increase */
+    opacity: 0.9 !important;
+    animation: fadeInUp 0.5s ease-out !important; /* Subtle fade-in and slide effect */
+}
+
+.card:hover .card-text {
+    font-size: 1.4rem !important;
+    opacity: 0.9 !important;
+    animation: fadeInUp 0.5s ease-out !important; /* Matches title animation */
+}
+
+.card-img-top {
+    width: 50% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    border-radius: 10px !important;
+    margin-right: 15px !important;
+    filter: grayscale(100%) !important;
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out !important;
+}
+
+.card-title {
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    margin: 0 !important;
+    font-family: 'Lobster', cursive !important; /* Hungry-themed font */
+}
+
+.card-text {
+    font-size: 1.2rem !important;
+    margin: 5px 0 !important;
+}
+
+/* Smooth fade-in and upward animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(5px);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+
+    .card-img-top {
+        width: 100% !important;
+        margin-bottom: 15px !important;
+    }
+
+    .card-body {
+        text-align: center !important;
+    }
+}
+
+
+.website-heading {
+    font-family: 'Lobster', cursive; /* Stylish font for a food website */
+    text-align: center;
+    color: orange; /* Eye-catching color */
+    font-size: 3rem; /* Large font size for prominence */
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px rgba(255, 165, 0, 0.7); /* Glow effect */
+    animation: slideInDown 1s ease-in-out; /* Smooth entry animation */
+}
+
+/* Animation for smooth heading appearance */
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.container-fluid{
+    background-color: black !important;
+    padding: 1rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+
+.navbar-brand:hover,.nav-link:hover{
+    color: orange !important;
+}
+
+
+
+/* General Button Styling */
+.btn-food {
+    background-color: #121212; /* Black background */
+    color: #ff6f00; /* Vibrant orange text */
+    padding: 12px 30px;
+    border: 2px solid #ff6f00; /* Orange border */
+    border-radius: 25px; /* Rounded button */
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    cursor: pointer;
+    position: relative; /* For hover effect positioning */
+    overflow: hidden;
+    z-index: 1; /* Ensure content is visible */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Icon Styling */
+.btn-food i {
+    color: #ff6f00; /* Orange icon */
+    font-size: 1.4rem; /* Slightly larger icon */
+    transition: color 0.2s ease-in-out;
+    z-index: 2; /* Ensure icon stays visible */
+}
+
+/* Text Styling */
+.btn-food span {
+    position: relative;
+    color: #ff6f00; /* Orange text */
+    z-index: 2; /* Ensure text stays visible */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.btn-food:hover {
+    color: #fff; /* White text on hover */
+    border-color: orange; /* White border */
+}
+
+.btn-food:hover i, 
+.btn-food:hover span {
+    color: #fff; /* White icon and text on hover */
+}
+
+/* Vertical Gradient Fill Animation */
+.btn-food::before {
+    content: "";
+    position: absolute;
+    top: 100%; /* Start from bottom */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #ff6f00, #ff8500 , #fca26e); /* Gradient direction bottom to top */
+    z-index: 0; /* Gradient behind content */
+    transition: top 0.4s ease-in-out;
+    border-radius: inherit;
+}
+
+.btn-food:hover::before {
+    top: 0; /* Animate gradient fill from bottom to top */
+}
+
+
+/* Common Styling for Auth Buttons */
+.btn-auth {
+    background-color: #121212; /* Black background */
+    color: #fff; /* White text */
+    padding: 12px 30px;
+    border: 2px solid #fff; /* White border */
+    border-radius: 25px; /* Rounded button */
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1; /* Ensure content stays above hover effect */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Icon Styling */
+.btn-auth i {
+    font-size: 1.4rem; /* Slightly larger icon */
+    transition: color 0.3s ease-in-out;
+    z-index: 2; /* Ensure icon stays visible */
+}
+
+/* Hover Effect: Common */
+.btn-auth:hover {
+    color: #fff; /* Ensure text and icon stay white */
+}
+
+/* Hover Effect: Gradient Fill */
+.btn-auth::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Gradient behind content */
+    transition: top 0.4s ease-in-out;
+    border-radius: inherit;
+}
+
+/* Specific Styling for Signup Button */
+.btn-signup {
+    border-color: #4caf50; /* Green border */
+}
+
+.btn-signup:hover {
+    border-color: #4caf50; /* Keep green border on hover */
+}
+
+.btn-signup::before {
+    background: linear-gradient(to top, #4caf50, #66bb6a , lightgreen); /* Green gradient */
+}
+
+.btn-signup:hover::before {
+    top: 0; /* Animate gradient fill */
+}
+
+/* Specific Styling for Login Button */
+.btn-login {
+    border-color: #007bff; /* Blue border */
+}
+
+.btn-login:hover {
+    border-color: #007bff; /* Keep blue border on hover */
+}
+
+.btn-login::before {
+    background: linear-gradient(to top, #007bff, #42a5f5 , lightblue); /* Blue gradient */
+}
+
+.btn-login:hover::before {
+    top: 0; /* Animate gradient fill */
+}
+.btn-login span :hover{
+    color: #343a40;
+    z-index: 9;
+}
+
+
+/* Logout Button Style */
+.btn-logout {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 25px;
+    color: #fff;
+    background-color: #000; /* Black background initially */
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden; /* Hide the overflow of the span */
+    transition: all 0.3s ease-in-out;
+    border: 2px solid orangered;
+}
+
+.btn-logout i {
+    margin-right: 8px; /* Space between icon and text */
+    z-index: 9;
+}
+
+.btn-logout span{
+    z-index: 9;
+}
+
+/* Background Span */
+.btn-background {
+    content: '';
+    position: absolute;
+    bottom: -100%; /* Position the span below the button initially */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #c0392b; /* Dark red background for the effect */
+    transition: bottom 0.3s ease-in-out;
+}
+
+/* Bottom-to-Top Effect */
+.btn-logout:hover .btn-background {
+    bottom: 0; /* Move the background from bottom to top */
+}
+
+.btn-logout:hover {
+    background-color: #000; /* Maintain black background on hover */
+    transform: scale(1.1);
+}
+/* Logout Button Style */
+.btn-cart {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 25px;
+    color: #fff;
+    background-color: #000; /* Black background initially */
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden; /* Hide the overflow of the span */
+    transition: all 0.3s ease-in-out;
+    border: 2px solid rgb(234, 0, 255);
+}
+
+.btn-cart i {
+    margin-right: 8px; /* Space between icon and text */
+    z-index: 9;
+}
+
+.btn-cart span{
+    z-index: 9;
+}
+
+/* Background Span */
+.btn-background-create {
+    content: '';
+    position: absolute;
+    bottom: -100%; /* Position the span below the button initially */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #b42bc0; /* Dark red background for the effect */
+    transition: bottom 0.3s ease-in-out;
+}
+
+/* Bottom-to-Top Effect */
+.btn-cart:hover .btn-background-create  {
+    bottom: 0; /* Move the background from bottom to top */
+}
+
+.btn-cart:hover {
+    background-color: #000; /* Maintain black background on hover */
+    transform: scale(1.1);
+}
+/* Footer Styling */
+footer {
+    background-color: rgb(10, 10, 10) !important; /* Dark background for contrast */
+    color: white !important; /* White text */
+    text-align: center !important; /* Center-align text */
+    padding: 20px 0 !important; /* Padding for spacing */
+    font-size: 14px !important; /* Slightly smaller text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #f39c12 !important; /* Orange color for links */
+    text-decoration: none !important; /* Remove underline */
+    transition: color 0.3s ease !important; /* Smooth transition for hover */
+}
+
+footer a:hover {
+    color: #e67e22 !important; /* Darker orange on hover */
+    text-decoration: underline !important; /* Underline on hover */
+}
+
+/* Add some space at the bottom */
+body {
+    margin-bottom: 60px; /* To avoid the footer overlapping content */
+}

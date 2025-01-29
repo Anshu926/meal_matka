@@ -1,0 +1,561 @@
+body {
+    background-color: black !important; /* Dark background for better contrast */
+    color: #f0f0f0 !important; /* Light text for contrast */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Meal Detail Section */
+.container {
+    margin-top: 5rem !important;
+    padding: 60px 15px;
+}
+
+.meal-title {
+    font-size: 3.2rem !important;
+    font-weight: bold !important;
+    color: #ff6f00 !important; /* Orange title */
+    margin-bottom: 20px;
+    text-transform: capitalize !important;
+    letter-spacing: 1px;
+}
+
+.meal-price {
+    font-size: 1.8rem !important;
+    font-weight: bold !important;
+    color: #ffa726 !important; /* Lighter orange for price */
+    margin-bottom: 20px;
+}
+
+.meal-description {
+    font-size: 1.2rem !important;
+    color: #e0e0e0 !important; /* Slightly dimmed white */
+    line-height: 1.6 !important;
+    margin-bottom: 20px;
+}
+
+.btn-order {
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+    padding: 12px 25px !important;
+    background-color: #ff6f00 !important;
+    color: #121212 !important;
+    border: none !important;
+    border-radius: 25px !important;
+    transition: background-color 0.3s ease  transform 0.3s ease !important;
+}
+
+.btn-order:hover {
+    background-color: #e65100 !important; /* Darker orange */
+    transform: scale(1.05) !important;
+}
+
+.img-fluid {
+    border-radius: 15px !important;
+    object-fit: cover !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8) !important;
+    max-height: 400px !important;
+    width: 100% !important;
+}
+
+.owner-message {
+    font-size: 1rem !important;
+    color: #ff7043 !important; /* Subtle orange warning */
+    font-weight: bold !important;
+    margin-top: 15px !important;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #0f0e0e !important;
+    color: #f0f0f0 !important;
+    text-align: center !important;
+    padding: 20px 0 !important;
+    margin-top: 30px !important;
+}
+
+footer a {
+    color: #ffa726 !important;
+    text-decoration: none !important;
+}
+
+footer a:hover {
+    color: #ffcc80 !important;
+}
+
+/* Review Form Dark Theme */
+.review-form {
+    background-color: #1e1e1e !important; /* Dark background */
+    padding: 20px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6) !important;
+    color: #ffa07a !important; /* Light orangish text */
+}
+
+.review-form h2 {
+    color: #ff6347 !important; /* Reddish text for the heading */
+    margin-bottom: 15px !important;
+}
+
+.review-form .form-label {
+    color: #ffa07a !important; /* Orangish label text */
+}
+
+.review-form select,
+.review-form textarea {
+    background-color: #333 !important; /* Dark input background */
+    color: #ffa07a !important; /* Orangish text */
+    border: 1px solid #555 !important; /* Subtle border */
+    border-radius: 5px !important;
+    padding: 10px !important;
+}
+
+.review-form select::placeholder,
+.review-form textarea::placeholder {
+    color: #ff8c00 !important; /* Orangish placeholder */
+}
+
+.review-form select:focus,
+.review-form textarea:focus {
+    outline: none !important;
+    border-color: #ff4500 !important; /* Bright reddish-orange focus */
+    box-shadow: 0 0 8px rgba(255, 69, 0, 0.5) !important; /* Glow effect */
+}
+
+.review-form button {
+    background-color: #ff4500 !important; /* Bright reddish-orange button */
+    color: #fff !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+    font-size: 1rem !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.review-form button:hover {
+    background-color: #ff6347 !important; /* Lighter red on hover */
+}
+
+.review-form button:focus {
+    outline: none !important;
+    box-shadow: 0 0 8px rgba(255, 69, 0, 0.5) !important; /* Glow effect */
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0 !important;
+        transform: translateX(-50%) scale(0.8) !important;
+    }
+    to {
+        opacity: 1 !important;
+        transform: translateX(-50%) scale(1) !important;
+    }
+}
+
+/* Navbar */
+.navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+    background-color: #343a40 !important;
+} 
+
+.container-fluid {
+    background-color: black !important;
+    padding: 1rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: orange !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .meal-title {
+        font-size: 2.5rem !important;
+    }
+
+    .meal-price {
+        font-size: 1.5rem !important;
+    }
+
+    .meal-description {
+        font-size: 1rem !important;
+    }
+
+    .btn-order {
+        width: 100% !important;
+    }
+}
+/* Review Card Styling */
+.review-card {
+    background-color: #2c2c2c !important; /* Dark background for the card */
+    padding: 20px !important;
+    margin-bottom: 20px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important; /* Soft shadow for depth */
+    color: #f0f0f0 !important; /* Light text for contrast */
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+/* Review Card Hover Effect */
+.review-card:hover {
+    transform: translateY(-5px) !important; /* Slight lift on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3) !important; /* Enhanced shadow on hover */
+}
+
+/* Review User Info */
+.review-card h4 {
+    font-size: 1.5rem !important; /* Larger font for the username */
+    color: #ffa726 !important; /* Orange color for the name */
+    font-weight: bold !important;
+    margin-bottom: 10px !important;
+}
+
+/* Review Rating */
+.review-card p strong {
+    color: #ffa726 !important; /* Highlighted rating with orange */
+    font-weight: bold !important;
+}
+
+/* Review Comment Text */
+.review-card p {
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+    color: #e0e0e0 !important; /* Light gray for the comment text */
+}
+
+/* Overall Review Section Styling */
+.container.mt-5 h2 {
+    font-size: 2rem !important;
+    color: #ffa726 !important; /* Orange color for section heading */
+    text-align: center !important;
+    font-weight: bold !important;
+    margin-bottom: 30px !important;
+}
+
+/* Optional additional styling for review section */
+.container.mt-5 {
+    background-color: #1c1c1c !important; /* Darker background for the review container */
+    border-radius: 10px !important;
+    padding: 40px 20px !important;
+}
+/* Review Form Section Styling */
+#box {
+    background-color: rgb(15, 14, 14) !important; /* Dark background */
+    border-radius: 2rem !important;
+    padding: 40px 30px !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3) !important; /* Soft shadow for depth */
+    margin-top: 50px !important;
+}
+
+/* Header Styling */
+#box h2 {
+    font-size: 2.2rem !important;
+    font-weight: bold !important;
+    color: #ffa726 !important; /* Vibrant orange */
+    text-align: left !important;
+    margin-bottom: 25px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px;
+}
+
+/* Form Styling */
+#box .review-form {
+    background-color: #1e1e1e !important; /* Dark background for the form */
+    border-radius: 10px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4) !important; /* Shadow for depth */
+    padding: 30px !important;
+    color: #fff !important;
+    font-size: 1rem !important;
+}
+
+#box .form-label {
+    color: #ffa726 !important; /* Orange label text */
+    font-weight: bold !important;
+    font-size: 1rem !important;
+    margin-bottom: 10px !important;
+}
+
+/* Select & Textarea Fields */
+#box .form-select, #box .form-control {
+    background-color: #333 !important; /* Dark background for inputs */
+    color: #ffa07a !important; /* Light orangish text */
+    border: 1px solid #555 !important; /* Subtle border */
+    border-radius: 5px !important;
+    padding: 12px !important;
+    transition: all 0.3s ease !important;
+}
+
+#box .form-select:focus, #box .form-control:focus {
+    border-color: #ff4500 !important; /* Reddish-orange focus border */
+    box-shadow: 0 0 8px rgba(255, 69, 0, 0.6) !important; /* Focus glow effect */
+    outline: none !important;
+}
+
+#box .form-select::placeholder, #box .form-control::placeholder {
+    color: #ff8c00 !important; /* Placeholder text in orange */
+}
+
+#box textarea {
+    font-size: 1rem !important;
+    height: 150px !important; /* Adjust height */
+    resize: vertical !important;
+}
+
+/* Submit Button */
+#box .btn-success {
+    background-color: #ff4500 !important; /* Bright red-orange button */
+    color: #fff !important;
+    font-size: 1.2rem !important;
+    padding: 12px 25px !important;
+    border-radius: 5px !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+#box .btn-success:hover {
+    background-color: #ff6347 !important; /* Lighter red on hover */
+    transform: translateY(-5px) !important; /* Hover lift effect */
+}
+
+#box .btn-success:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.8) !important; /* Focus glow effect */
+}
+
+/* Authenticated User Message */
+#box .review-form p {
+    text-align: center !important;
+    color: #f0f0f0 !important;
+    font-size: 1.1rem !important;
+    margin-top: 20px !important;
+}
+
+#box .review-form p a {
+    color: #ff6347 !important; /* Link color */
+    font-weight: bold !important;
+}
+
+#box .review-form p a:hover {
+    color: #ff4500 !important; /* Hover effect on the link */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #box .review-form {
+        padding: 20px !important;
+    }
+
+    #box .form-label {
+        font-size: 0.9rem !important;
+    }
+
+    #box .form-select, #box .form-control, #box .btn-success {
+        font-size: 1rem !important;
+    }
+
+    #box h2 {
+        font-size: 1.8rem !important;
+    }
+}
+#box .review-form p {
+    text-align: center !important; /* Center-align the text */
+    color: #f0f0f0 !important; /* Light text for contrast */
+    font-size: 1.1rem !important;
+    margin-top: 20px !important;
+}
+
+#box .review-form p a {
+    color: #ff6347 !important; /* Link color */
+    font-weight: bold !important;
+}
+
+#box .review-form p a:hover {
+    color: #ff4500 !important; /* Hover effect on the link */
+}
+
+
+
+
+
+#main {
+    background-color: rgb(0, 0, 0) !important; /* Dark background for the entire section */
+    color: #f0f0f0 !important; /* Light text color */
+    padding: 60px 0 !important;
+    margin-top: 5rem !important;
+    padding: 2.2rem !important;
+    transition: 0.2s;
+    width: fit-content !important;
+}
+
+#main .meal-title {
+    font-size: 3.2rem !important;
+    color: #ff6f00 !important; /* Orange title */
+    font-weight: bold !important;
+    text-transform: capitalize !important;
+    letter-spacing: 1px;
+}
+
+#main .meal-price {
+    font-size: 1.8rem !important;
+    color: #ffa726 !important; /* Lighter orange for price */
+    font-weight: bold !important;
+}
+
+#main .meal-description {
+    font-size: 1.2rem !important;
+    color: #e0e0e0 !important;
+    line-height: 1.6 !important;
+}
+
+#main .btn-order {
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+    padding: 12px 25px !important;
+    background-color: #ff6f00 !important; /* Orange background */
+    color: #121212 !important;
+    border: none !important;
+    border-radius: 25px !important;
+    transition: background-color 0.3s ease, transform 0.3s ease !important;
+}
+
+#main .btn-order:hover {
+    background-color: #e65100 !important; /* Darker orange for hover */
+    transform: scale(1.05) !important;
+}
+
+#main .owner-message {
+    font-size: 1.2rem !important;
+    color: #ff7043 !important; /* Subtle orange for the message */
+    font-weight: bold !important;
+    margin-top: 20px !important;
+}
+
+/* Button styling for modify and delete */
+#main form button {
+    transition: background-color 0.3s ease, transform 0.3s ease !important;
+}
+
+#main form button:hover {
+    transform: scale(1.05) !important;
+}
+
+#main .btn-danger {
+    background-color: #e53935 !important; /* Red for delete button */
+    border-radius: 25px !important;
+}
+
+#main .btn-danger:hover {
+    background-color: #d32f2f !important; /* Darker red for hover */
+}
+
+#main .btn-primary {
+    background-color: #2196f3 !important; /* Blue for modify button */
+    border-radius: 25px !important;
+}
+
+#main .btn-primary:hover {
+    background-color: #1976d2 !important; /* Darker blue for hover */
+}
+
+/* Styling for the meal image */
+#main .img-fluid {
+    border-radius: 15px !important;
+    object-fit: cover !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important; /* Soft shadow */
+    max-height: 400px !important;
+    width: 100% !important;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    #main .meal-title {
+        font-size: 2.5rem !important;
+    }
+
+    #main .meal-price {
+        font-size: 1.5rem !important;
+    }
+
+    #main .meal-description {
+        font-size: 1rem !important;
+    }
+
+    #main .btn-order {
+        width: 100% !important;
+    }
+}
+
+#show_rev{
+    background-color: #0F0E0E !important;
+    padding: 3rem !important;
+    border-radius: 2rem !important;
+    text-align: left !important;
+}
+#show_rev h2{
+    text-align: left !important;
+}
+#show_rev .review-card{
+    text-align: left !important;
+}
+.review-card {
+    background-color: black !important;
+    padding-right: 4rem !important;
+    border-radius: 2rem !important;
+    padding-top: 2.5rem !important;
+    padding-left: 4rem !important;
+    position: relative; /* Allow absolute positioning within the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
+}
+
+.review-card:hover {
+    transform: scale(1.05) !important; /* Slightly increase size on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important; /* Add a soft shadow on hover */
+}
+
+
+.review-card .date {
+    color: greenyellow !important;
+    position: absolute !important;
+    bottom: 1rem !important; /* Distance from the bottom */
+    right: 1rem !important; /* Distance from the right */
+}
+
+#show{
+    background-color: #0F0E0E!important;
+    padding: 2rem !important;
+}
+#image{
+    border-radius: 2rem !important;
+    background-color: #1e1c1c;
+    padding: 2rem !important;
+    transition: 1s !important;
+    animation-name: anime !important;
+    animation-duration: 1s !important;
+    animation-delay: 1s !important;
+    animation-iteration-count: infinite !important;
+    
+}
+
+#image:hover{
+    transform: scaleX(1.02);
+    transform: scaleY(1.05);
+}
+
+
+#info{
+    margin-left: 3rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    margin-top: 1rem !important;
+}

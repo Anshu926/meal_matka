@@ -1,0 +1,92 @@
+/* General body styling */
+body {
+    background-color: #1a1a1a !important; /* Dark background */
+    color: #fff !important; /* White text */
+    font-family: Arial, sans-serif !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Header */
+header {
+    text-align: center !important;
+    margin-top: 50px !important;
+}
+
+h1 {
+    color: #FFA500 !important; /* Orange color */
+    font-size: 2.5rem !important;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #111 !important; /* Dark navbar */
+}
+
+.navbar .navbar-brand, .navbar .nav-link {
+    color: #FFA500 !important; /* Orange text */
+}
+
+.navbar .navbar-toggler-icon {
+    background-color: #FFA500 !important;
+}
+
+/* Form styles */
+form {
+    max-width: 600px !important;
+    margin: 30px auto !important;
+    padding: 20px !important;
+    background-color: #333 !important;
+    border-radius: 8px !important;
+}
+
+.form-label {
+    color: #FFA500 !important; /* Orange labels */
+}
+
+input, textarea {
+    background-color: #222 !important;
+    color: #fff !important;
+    border: 1px solid #444 !important;
+}
+
+input:focus, textarea:focus {
+    border-color: #FFA500 !important;
+    box-shadow: 0 0 5px rgba(255, 165, 0, 0.7) !important;
+}
+
+/* Buttons */
+.btn {
+    background-color: #FFA500 !important; /* Orange buttons */
+    border: none !important;
+    padding: 10px 20px !important;
+    font-size: 1rem !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    border-radius: 5px !important;
+}
+
+.btn:hover {
+    background-color: #e68a00 !important; /* Darker orange on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #0f0e0e !important;
+    color: #f0f0f0 !important;
+    text-align: center !important;
+    padding: 10px  !important;
+    margin-top: 30px !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    width: 100vw !important;
+}
+
+footer a {
+    color: #ffa726 !important;
+    text-decoration: none !important;
+}
+
+footer a:hover {
+    color: #ffcc80 !important;
+}
