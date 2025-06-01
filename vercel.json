@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "meal.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/meal.js"
+    }
+  ]
+}
